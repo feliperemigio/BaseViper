@@ -9,8 +9,8 @@ import UIKit
 
 final class LoginViewController: BaseViewController<LoginPresenterProtocol> {
 
-    private weak var emailTextField: UITextField?
-    private weak var passwordTextField: UITextField?
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
 
     private let loginButton: UIButton = {
         let button = UIButton(type: .system)
@@ -41,6 +41,7 @@ final class LoginViewController: BaseViewController<LoginPresenterProtocol> {
         passwordField.borderStyle = .roundedRect
         passwordField.translatesAutoresizingMaskIntoConstraints = false
 
+        // Wire programmatic views to IBOutlet properties
         emailTextField = emailField
         passwordTextField = passwordField
 
@@ -68,7 +69,7 @@ final class LoginViewController: BaseViewController<LoginPresenterProtocol> {
         ])
     }
 
-    @objc private func loginButtonTapped() {
+    @IBAction func loginButtonTapped() {
         guard let email = emailTextField?.text, !email.isEmpty,
               let password = passwordTextField?.text, !password.isEmpty else {
             return
