@@ -18,6 +18,8 @@ final class ExampleViewController: BaseViewController<ExamplePresenterProtocol>,
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
     
