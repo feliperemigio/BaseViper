@@ -5,18 +5,17 @@
 //  Created by Felipe Remigio on 22/05/20.
 //  Copyright © 2020 Felipe Remigio. All rights reserved.
 //
-import Testing
+import XCTest
 @testable import VIPER
 
-@Suite("LoginPresenter Tests")
-struct LoginPresenterTests {
+final class LoginPresenterTests: XCTestCase {
 
-    var sut: LoginPresenter
-    var delegate: LoginPresenterDelegateMock
-    var interactor: LoginInteractorMock
-    var router: LoginRouterMock
+    var sut: LoginPresenter!
+    var delegate: LoginPresenterDelegateMock!
+    var interactor: LoginInteractorMock!
+    var router: LoginRouterMock!
 
-    init() {
+    override func setUp() {
         self.delegate = LoginPresenterDelegateMock()
         self.router = LoginRouterMock()
         self.interactor = LoginInteractorMock()
@@ -24,32 +23,28 @@ struct LoginPresenterTests {
         self.sut.setUp(interactor: self.interactor)
     }
 
-    @Test("doLogin calls interactor login with correct credentials")
-    func testDoLogin() {
-        sut.doLogin(email: "test@test.com", password: "pass123")
-        #expect(interactor.loginReached == true)
-        #expect(interactor.lastEmail == "test@test.com")
-        #expect(interactor.lastPassword == "pass123")
+    func testDoLoginCallsInteractorWithCorrectCredentials() {
+        self.sut.doLogin(email: "test@test.com", password: "pass123")
+        XCTAssertTrue(self.interactor.loginReached)
+        XCTAssertEqual(self.interactor.lastEmail, "test@test.com")
+        XCTAssertEqual(self.interactor.lastPassword, "pass123")
     }
 
-    @Test("loginStarted shows loading")
-    func testLoginStarted() {
-        sut.loginStarted()
-        #expect(delegate.showLoadingReached == true)
+    func testLoginStartedShowsLoading() {
+        self.sut.loginStarted()
+        XCTAssertTrue(self.delegate.showLoadingReached)
     }
 
-    @Test("didLoginSuccess hides loading and notifies delegate")
-    func testDidLoginSuccess() {
-        sut.didLoginSuccess()
-        #expect(delegate.hideLoadingReached == true)
-        #expect(delegate.loginSuccessReached == true)
+    func testDidLoginSuccessHidesLoadingAndNotifiesDelegate() {
+        self.sut.didLoginSuccess()
+        XCTAssertTrue(self.delegate.hideLoadingReached)
+        XCTAssertTrue(self.delegate.loginSuccessReached)
     }
 
-    @Test("didLoginFailed hides loading and notifies delegate with error")
-    func testDidLoginFailed() {
-        sut.didLoginFailed(error: "Invalid credentials")
-        #expect(delegate.hideLoadingReached == true)
-        #expect(delegate.loginFailedReached == true)
-        #expect(delegate.loginFailedError == "Invalid credentials")
+    func testDidLoginFailedHidesLoadingAndNotifiesDelegateWithError() {
+        self.sut.didLoginFailed(error: "Invalid credentials")
+        XCTAssertTrue(self.delegate.hideLoadingReached)
+        XCTAssertTrue(self.delegate.loginFailedReached)
+        XCTAssertEqual(self.delegate.loginFailedError, "Invalid credentials")
     }
 }

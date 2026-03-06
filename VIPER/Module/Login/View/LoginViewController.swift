@@ -9,8 +9,8 @@ import UIKit
 
 final class LoginViewController: BaseViewController<LoginPresenterProtocol> {
 
-    @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
+    var emailTextField: UITextField!
+    var passwordTextField: UITextField!
 
     private let loginButton: UIButton = {
         let button = UIButton(type: .system)
@@ -69,7 +69,7 @@ final class LoginViewController: BaseViewController<LoginPresenterProtocol> {
         ])
     }
 
-    @IBAction func loginButtonTapped() {
+    @objc func loginButtonTapped() {
         guard let email = emailTextField?.text, !email.isEmpty,
               let password = passwordTextField?.text, !password.isEmpty else {
             return

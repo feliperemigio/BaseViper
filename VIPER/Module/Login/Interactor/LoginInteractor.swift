@@ -23,14 +23,25 @@ protocol LoginInteractorDelegate: BaseInteractorDelegate {
 extension LoginInteractor: LoginInteractorProtocol {
     func login(email: String, password: String) {
         self.delegate?.loginStarted()
-        DispatchQueue.global().asyncAfter(deadline: .now() + 2) {
+        let url = URL(string: "https://api.example.com/login")!
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        let body: [String: String] = ["email": email, "password": password]
+        request.httpBody = try? JSONSerialization.data(withJSONObject: body)
+
+        URLSession.shared.dataTask(with: request) { [weak self] _, response, error in
             DispatchQueue.main.async {
-                if email == "user@example.com" && password == "password123" {
-                    self.delegate?.didLoginSuccess()
+                if let error = error {
+                    self?.delegate?.didLoginFailed(error: error.localizedDescription)
+                    return
+                }
+                if let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 {
+                    self?.delegate?.didLoginSuccess()
                 } else {
-                    self.delegate?.didLoginFailed(error: "Invalid email or password.")
+                    self?.delegate?.didLoginFailed(error: "Invalid email or password.")
                 }
             }
-        }
+        }.resume()
     }
 }
