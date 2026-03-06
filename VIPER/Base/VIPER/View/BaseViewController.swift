@@ -29,7 +29,17 @@ class BaseViewController<T>: UIViewController, BaseViewControllerProtocol {
         super.viewWillAppear(animated)
         self.basePresenter?.viewWillAppear()
     }
-    
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.basePresenter?.viewDidAppear()
+    }
+
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        self.basePresenter?.viewDidDisappear()
+    }
+
     func setUp(presenter: BasePresenterProtocol) {
         self.basePresenter = presenter
     }
