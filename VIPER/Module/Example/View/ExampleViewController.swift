@@ -12,9 +12,9 @@ final class ExampleViewController: BaseViewController<ExamplePresenterProtocol>,
     
     @IBOutlet weak var tableView: UITableView!
     
-    private var section: SectionData<String> = SectionData<String>(id: 0,
-                                                                 headerTitle: nil,
-                                                                 items: ["Teste 1"])
+    private var sections: [SectionData<String>] = [
+        SectionData<String>(id: 0, headerTitle: nil, items: ["Teste 1"])
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,13 +22,17 @@ final class ExampleViewController: BaseViewController<ExamplePresenterProtocol>,
     
     
     // MARK: - TableView Data Source
-       
+
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return sections.count
+    }
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.section.items.count
+        return sections[safe: section]?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let text = self.section.items[indexPath.row]
+        let text = sections[safe: indexPath.section]?[indexPath.row]
         
         let tableViewCell = UITableViewCell()
         tableViewCell.textLabel?.text = text
@@ -36,13 +40,20 @@ final class ExampleViewController: BaseViewController<ExamplePresenterProtocol>,
         return tableViewCell
         
     }
+
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return sections[safe: section]?.headerTitle
+    }
+
+    func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+        return sections[safe: section]?.footerTitle
+    }
     
     
     // MARK: - TableView Delegate
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard self.section.items.indices.contains(indexPath.row) else { return }
-        let text = self.section.items[indexPath.row]
+        guard let text = sections[safe: indexPath.section]?[indexPath.row] else { return }
         self.presenter?.selectedItem(text)
     }
 }
