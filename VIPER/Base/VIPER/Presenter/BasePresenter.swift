@@ -9,6 +9,8 @@
 protocol BasePresenterProtocol: AnyObject {
     func viewDidLoad()
     func viewWillAppear()
+    func viewDidAppear()
+    func viewDidDisappear()
     func setUp(interactor: BaseInteractorProtocol)
     func setUp()
 }
@@ -36,6 +38,8 @@ class BasePresenter<T, V, Z>: BasePresenterProtocol {
     }
     
     func viewWillAppear() {}
+    func viewDidAppear() {}
+    func viewDidDisappear() {}
     func setUp() {}
 }
 

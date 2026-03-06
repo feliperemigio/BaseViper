@@ -30,7 +30,17 @@
 		C0482BEC2478B15500D5AF02 /* ExamplePresenterDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0482BEB2478B15500D5AF02 /* ExamplePresenterDelegateMock.swift */; };
 		C0482BEE2478B15F00D5AF02 /* ExampleRouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0482BED2478B15F00D5AF02 /* ExampleRouterMock.swift */; };
 		C0482BF02478B42300D5AF02 /* ExampleInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0482BEF2478B42300D5AF02 /* ExampleInteractorMock.swift */; };
-/* End PBXBuildFile section */
+		BE91127A0A0C4526B91E960A /* ViperModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A335E26FE2B45CE8B8CAEE5 /* ViperModuleFactory.swift */; };
+		5F9B9CC58B924D7F838AC4B1 /* ModuleFactory+DI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57575F03A9DA4C0486CD2A07 /* ModuleFactory+DI.swift */; };
+		E87E97C673B342D59BFF5B79 /* AlertPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ABDAE231EE49578541261D /* AlertPresentable.swift */; };
+		C39EF327FF9A4E898329D650 /* ToastPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8F5D481AD4420C8704E26B /* ToastPresentable.swift */; };
+		29B612ABC64C4855BB3E77A2 /* NavigationHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70976CEEBE0B4AB4A31B828E /* NavigationHelpers.swift */; };
+		5EA51F045C5C40DABC1CA107 /* LoadablePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C1F81741744C08927A3C81 /* LoadablePresenter.swift */; };
+		42C955F662C84068B96FDC7D /* MockBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140D32862131410B9E7001F3 /* MockBase.swift */; };
+		178990D2052C4147A2FDDCBC /* PropertyTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D8E38E0A2D4AD98DFC742A /* PropertyTracker.swift */; };
+		F09EA5B35B784E93B1CA6213 /* XCTestAssertHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389FAABAE6B840558B2CA6F5 /* XCTestAssertHelpers.swift */; };
+		EFCE0906DD2D4B7CBFC7074F /* AsyncTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16BC4A15BBD450C84524167 /* AsyncTestHelpers.swift */; };
+		/* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		C0482B9F2478AB9C00D5AF02 /* PBXContainerItemProxy */ = {
@@ -72,7 +82,17 @@
 		C0482BEB2478B15500D5AF02 /* ExamplePresenterDelegateMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplePresenterDelegateMock.swift; sourceTree = "<group>"; };
 		C0482BED2478B15F00D5AF02 /* ExampleRouterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleRouterMock.swift; sourceTree = "<group>"; };
 		C0482BEF2478B42300D5AF02 /* ExampleInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleInteractorMock.swift; sourceTree = "<group>"; };
-/* End PBXFileReference section */
+		7A335E26FE2B45CE8B8CAEE5 /* ViperModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperModuleFactory.swift; sourceTree = "<group>"; };
+		57575F03A9DA4C0486CD2A07 /* ModuleFactory+DI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleFactory+DI.swift; sourceTree = "<group>"; };
+		39ABDAE231EE49578541261D /* AlertPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresentable.swift; sourceTree = "<group>"; };
+		AE8F5D481AD4420C8704E26B /* ToastPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastPresentable.swift; sourceTree = "<group>"; };
+		70976CEEBE0B4AB4A31B828E /* NavigationHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHelpers.swift; sourceTree = "<group>"; };
+		D4C1F81741744C08927A3C81 /* LoadablePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadablePresenter.swift; sourceTree = "<group>"; };
+		140D32862131410B9E7001F3 /* MockBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBase.swift; sourceTree = "<group>"; };
+		15D8E38E0A2D4AD98DFC742A /* PropertyTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyTracker.swift; sourceTree = "<group>"; };
+		389FAABAE6B840558B2CA6F5 /* XCTestAssertHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestAssertHelpers.swift; sourceTree = "<group>"; };
+		F16BC4A15BBD450C84524167 /* AsyncTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncTestHelpers.swift; sourceTree = "<group>"; };
+		/* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C0482B852478AB9700D5AF02 /* Frameworks */ = {
@@ -139,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				C0482BE02478AE2300D5AF02 /* Module */,
+				5223CEC28DFF41719988572C /* Helpers */,
 				C0482BA42478AB9C00D5AF02 /* Info.plist */,
 			);
 			path = VIPERTests;
@@ -158,6 +179,8 @@
 			children = (
 				C0482BBC2478ABD800D5AF02 /* ViewLoadable */,
 				C0482BBE2478ABD800D5AF02 /* VIPER */,
+				1EA29DFA932C4D87B2F7FB99 /* ModuleFactory */,
+				2ABD00576AAB44CCA7FB092A /* Presentation */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -194,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				C0482BC22478ABD800D5AF02 /* BasePresenter.swift */,
+				D4C1F81741744C08927A3C81 /* LoadablePresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -218,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				C0482BC82478ABD800D5AF02 /* BaseRouter.swift */,
+				70976CEEBE0B4AB4A31B828E /* NavigationHelpers.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -319,7 +344,39 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-/* End PBXGroup section */
+
+		1EA29DFA932C4D87B2F7FB99 /* ModuleFactory */ = {
+			isa = PBXGroup;
+			children = (
+				7A335E26FE2B45CE8B8CAEE5 /* ViperModuleFactory.swift */,
+				57575F03A9DA4C0486CD2A07 /* ModuleFactory+DI.swift */,
+			);
+			path = ModuleFactory;
+			sourceTree = "<group>";
+		};
+
+		2ABD00576AAB44CCA7FB092A /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				39ABDAE231EE49578541261D /* AlertPresentable.swift */,
+				AE8F5D481AD4420C8704E26B /* ToastPresentable.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+
+		5223CEC28DFF41719988572C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				140D32862131410B9E7001F3 /* MockBase.swift */,
+				15D8E38E0A2D4AD98DFC742A /* PropertyTracker.swift */,
+				389FAABAE6B840558B2CA6F5 /* XCTestAssertHelpers.swift */,
+				F16BC4A15BBD450C84524167 /* AsyncTestHelpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		/* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
 		C0482B872478AB9700D5AF02 /* VIPER */ = {
@@ -428,6 +485,12 @@
 				C0482BCB2478ABD800D5AF02 /* BasePresenter.swift in Sources */,
 				C0482B8C2478AB9700D5AF02 /* AppDelegate.swift in Sources */,
 				C0482BDF2478AC0200D5AF02 /* ExampleRouter.swift in Sources */,
+				BE91127A0A0C4526B91E960A /* ViperModuleFactory.swift in Sources */,
+				5F9B9CC58B924D7F838AC4B1 /* ModuleFactory+DI.swift in Sources */,
+				E87E97C673B342D59BFF5B79 /* AlertPresentable.swift in Sources */,
+				C39EF327FF9A4E898329D650 /* ToastPresentable.swift in Sources */,
+				29B612ABC64C4855BB3E77A2 /* NavigationHelpers.swift in Sources */,
+				5EA51F045C5C40DABC1CA107 /* LoadablePresenter.swift in Sources */,
 				C0482BCA2478ABD800D5AF02 /* SectionData.swift in Sources */,
 				C0482BDB2478AC0200D5AF02 /* ExamplePresenter.swift in Sources */,
 				C0482B8E2478AB9700D5AF02 /* SceneDelegate.swift in Sources */,
@@ -445,6 +508,10 @@
 				C0482BE52478AE4200D5AF02 /* ExampleInteractorDelegateMock.swift in Sources */,
 				C0482BE72478AE5100D5AF02 /* ExampleInteractorTests.swift in Sources */,
 				C0482BF02478B42300D5AF02 /* ExampleInteractorMock.swift in Sources */,
+				42C955F662C84068B96FDC7D /* MockBase.swift in Sources */,
+				178990D2052C4147A2FDDCBC /* PropertyTracker.swift in Sources */,
+				F09EA5B35B784E93B1CA6213 /* XCTestAssertHelpers.swift in Sources */,
+				EFCE0906DD2D4B7CBFC7074F /* AsyncTestHelpers.swift in Sources */,
 				C0482BEC2478B15500D5AF02 /* ExamplePresenterDelegateMock.swift in Sources */,
 				C0482BEA2478B0DA00D5AF02 /* ExamplePresenterTests.swift in Sources */,
 			);
