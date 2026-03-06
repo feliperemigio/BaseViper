@@ -1,0 +1,42 @@
+{
+  "initial_view_controller_load": {
+    "max_load_time_seconds": 3.0,
+    "max_memory_mb": 30.0,
+    "min_fps": 55.0
+  },
+  "view_controller_navigation": {
+    "max_load_time_seconds": 2.0,
+    "max_memory_mb": 10.0,
+    "min_fps": 55.0
+  },
+  "concurrent_view_loading": {
+    "max_load_time_seconds": 3.5,
+    "max_memory_mb": 30.0
+  },
+  "load_time_consistency": {
+    "max_load_time_seconds": 3.5
+  },
+  "memory_initial_load": {
+    "max_load_time_seconds": 3.0,
+    "max_memory_mb": 30.0
+  },
+  "memory_navigation_stability": {
+    "max_load_time_seconds": 2.0,
+    "max_memory_mb": 15.0
+  },
+  "memory_leak_check": {
+    "max_load_time_seconds": 3.5,
+    "max_memory_mb": 40.0
+  },
+  "view_did_load_proxy": {
+    "max_load_time_seconds": 3.0,
+    "max_memory_mb": 30.0
+  },
+  "view_will_appear_proxy": {
+    "max_load_time_seconds": 3.0,
+    "max_memory_mb": 30.0
+  },
+  "lifecycle_consistency": {
+    "max_load_time_seconds": 3.0
+  }
+}

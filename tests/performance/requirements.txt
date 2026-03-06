@@ -1,0 +1,8 @@
+Appium-Python-Client==3.1.0
+pytest==7.4.4
+pytest-html==4.1.1
+selenium==4.15.2
+psutil==5.9.7
+Pillow==10.2.0
+numpy==1.26.3
+# Python 3.10+ is required

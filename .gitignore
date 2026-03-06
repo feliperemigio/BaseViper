@@ -88,3 +88,10 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+
+# Python performance tests — generated artefacts
+tests/performance/reports/
+tests/performance/.venv/
+tests/performance/__pycache__/
+tests/performance/utils/__pycache__/
+*.pyc
