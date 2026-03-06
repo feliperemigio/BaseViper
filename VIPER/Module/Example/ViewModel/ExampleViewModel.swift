@@ -29,6 +29,11 @@ final class ExampleViewModel: BaseViewModel {
         service.fetchItems { [weak self] fetchedItems in
             self?.isLoading = false
             self?.items = fetchedItems
+            if fetchedItems.isEmpty {
+                self?.error = "No items found"
+            } else {
+                self?.error = nil
+            }
         }
     }
 

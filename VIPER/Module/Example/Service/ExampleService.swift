@@ -20,7 +20,7 @@ final class ExampleService: ExampleServiceProtocol {
                 ExampleItem(title: "Teste 2"),
                 ExampleItem(title: "Teste 3")
             ]
-            OperationQueue.main.addOperation {
+            DispatchQueue.main.async {
                 completion(items)
             }
         }

@@ -19,7 +19,7 @@ final class ExampleViewModelTests: XCTestCase {
         sut = ExampleViewModel(service: service)
     }
 
-    func testLoadItemsSetsIsLoading() {
+    func testLoadItemsCallsService() {
         sut.loadItems()
         XCTAssertTrue(service.fetchItemsReached)
     }
