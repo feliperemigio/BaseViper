@@ -29,6 +29,9 @@ extension ExampleRouter: ExampleRouterProtocol {
                                                 message: "Detail",
                                                 preferredStyle: .alert)
         alertController.addAction(.init(title: "OK",
+                                        style: .default,
+                                        handler: nil))
+        alertController.addAction(.init(title: "Cancel",
                                         style: .cancel,
                                         handler: nil))
         self.view?.present(alertController, animated: true, completion: nil)

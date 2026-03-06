@@ -24,6 +24,7 @@ protocol ExamplePresenterDelegate: BasePresenterDelegate, ViewLoadable {
 
 extension ExamplePresenter: ExamplePresenterProtocol {
     func selectedItem(_ text: String) {
+        print("Selected item: \(text)")
         self.router?.presentTest()
     }
 }
