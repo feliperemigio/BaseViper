@@ -1,5 +1,5 @@
 //
-//  ViewLoadable.swift
+//  Service.swift
 //  VIPER
 //
 //  Created by Felipe Remigio on 22/05/20.
@@ -8,7 +8,4 @@
 
 import Foundation
 
-protocol ViewLoadable: AnyObject {
-    func showLoading()
-    func hideLoading()
-}
+protocol Service: AnyObject {}
