@@ -13,23 +13,21 @@
 		C0482B922478AB9C00D5AF02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0482B912478AB9C00D5AF02 /* Assets.xcassets */; };
 		C0482B952478AB9C00D5AF02 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0482B942478AB9C00D5AF02 /* Preview Assets.xcassets */; };
 		C0482B982478AB9C00D5AF02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0482B962478AB9C00D5AF02 /* LaunchScreen.storyboard */; };
-		C0482BC92478ABD800D5AF02 /* ViewLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0482BBD2478ABD800D5AF02 /* ViewLoadable.swift */; };
-		C0482BCA2478ABD800D5AF02 /* SectionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0482BC02478ABD800D5AF02 /* SectionData.swift */; };
-		C0482BCB2478ABD800D5AF02 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0482BC22478ABD800D5AF02 /* BasePresenter.swift */; };
-		C0482BCC2478ABD800D5AF02 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0482BC42478ABD800D5AF02 /* BaseViewController.swift */; };
-		C0482BCD2478ABD800D5AF02 /* BaseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0482BC62478ABD800D5AF02 /* BaseInteractor.swift */; };
-		C0482BCE2478ABD800D5AF02 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0482BC82478ABD800D5AF02 /* BaseRouter.swift */; };
-		C0482BDB2478AC0200D5AF02 /* ExamplePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0482BD32478AC0200D5AF02 /* ExamplePresenter.swift */; };
-		C0482BDC2478AC0200D5AF02 /* ExampleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0482BD52478AC0200D5AF02 /* ExampleInteractor.swift */; };
-		C0482BDD2478AC0200D5AF02 /* ExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0482BD72478AC0200D5AF02 /* ExampleViewController.xib */; };
-		C0482BDE2478AC0200D5AF02 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0482BD82478AC0200D5AF02 /* ExampleViewController.swift */; };
-		C0482BDF2478AC0200D5AF02 /* ExampleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0482BDA2478AC0200D5AF02 /* ExampleRouter.swift */; };
-		C0482BE52478AE4200D5AF02 /* ExampleInteractorDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0482BE42478AE4200D5AF02 /* ExampleInteractorDelegateMock.swift */; };
-		C0482BE72478AE5100D5AF02 /* ExampleInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0482BE62478AE5100D5AF02 /* ExampleInteractorTests.swift */; };
-		C0482BEA2478B0DA00D5AF02 /* ExamplePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0482BE92478B0DA00D5AF02 /* ExamplePresenterTests.swift */; };
-		C0482BEC2478B15500D5AF02 /* ExamplePresenterDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0482BEB2478B15500D5AF02 /* ExamplePresenterDelegateMock.swift */; };
-		C0482BEE2478B15F00D5AF02 /* ExampleRouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0482BED2478B15F00D5AF02 /* ExampleRouterMock.swift */; };
-		C0482BF02478B42300D5AF02 /* ExampleInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0482BEF2478B42300D5AF02 /* ExampleInteractorMock.swift */; };
+		AA000001000000000000001 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000002000000000000001 /* BaseViewModel.swift */; };
+		AA000003000000000000001 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000004000000000000001 /* Coordinator.swift */; };
+		AA000005000000000000001 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000006000000000000001 /* Service.swift */; };
+		AA000007000000000000001 /* ExampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000008000000000000001 /* ExampleModel.swift */; };
+		AA000009000000000000001 /* ExampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000A000000000000001 /* ExampleViewModel.swift */; };
+		AA00000B000000000000001 /* ExampleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000C000000000000001 /* ExampleService.swift */; };
+		AA00000D000000000000001 /* ExampleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000E000000000000001 /* ExampleCoordinator.swift */; };
+		AA00000F000000000000001 /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000010000000000000001 /* ExampleView.swift */; };
+		AA000011000000000000001 /* ViewLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0482BBD2478ABD800D5AF02 /* ViewLoadable.swift */; };
+		AA000012000000000000001 /* SectionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0482BC02478ABD800D5AF02 /* SectionData.swift */; };
+		AA000013000000000000001 /* ExampleViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000014000000000000001 /* ExampleViewModelTests.swift */; };
+		AA000015000000000000001 /* ExampleServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000016000000000000001 /* ExampleServiceTests.swift */; };
+		AA000017000000000000001 /* ExampleCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000018000000000000001 /* ExampleCoordinatorTests.swift */; };
+		AA000019000000000000001 /* ExampleServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00001A000000000000001 /* ExampleServiceMock.swift */; };
+		AA00001B000000000000001 /* ExampleCoordinatorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00001C000000000000001 /* ExampleCoordinatorMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,23 +53,21 @@
 		C0482BA42478AB9C00D5AF02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0482BAD2478AB9C00D5AF02 /* VIPERUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERUITests.swift; sourceTree = "<group>"; };
 		C0482BAF2478AB9C00D5AF02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA000002000000000000001 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		AA000004000000000000001 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		AA000006000000000000001 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		AA000008000000000000001 /* ExampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleModel.swift; sourceTree = "<group>"; };
+		AA00000A000000000000001 /* ExampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewModel.swift; sourceTree = "<group>"; };
+		AA00000C000000000000001 /* ExampleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleService.swift; sourceTree = "<group>"; };
+		AA00000E000000000000001 /* ExampleCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleCoordinator.swift; sourceTree = "<group>"; };
+		AA000010000000000000001 /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
 		C0482BBD2478ABD800D5AF02 /* ViewLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewLoadable.swift; sourceTree = "<group>"; };
 		C0482BC02478ABD800D5AF02 /* SectionData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionData.swift; sourceTree = "<group>"; };
-		C0482BC22478ABD800D5AF02 /* BasePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
-		C0482BC42478ABD800D5AF02 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		C0482BC62478ABD800D5AF02 /* BaseInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseInteractor.swift; sourceTree = "<group>"; };
-		C0482BC82478ABD800D5AF02 /* BaseRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
-		C0482BD32478AC0200D5AF02 /* ExamplePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamplePresenter.swift; sourceTree = "<group>"; };
-		C0482BD52478AC0200D5AF02 /* ExampleInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleInteractor.swift; sourceTree = "<group>"; };
-		C0482BD72478AC0200D5AF02 /* ExampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExampleViewController.xib; sourceTree = "<group>"; };
-		C0482BD82478AC0200D5AF02 /* ExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
-		C0482BDA2478AC0200D5AF02 /* ExampleRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleRouter.swift; sourceTree = "<group>"; };
-		C0482BE42478AE4200D5AF02 /* ExampleInteractorDelegateMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleInteractorDelegateMock.swift; sourceTree = "<group>"; };
-		C0482BE62478AE5100D5AF02 /* ExampleInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleInteractorTests.swift; sourceTree = "<group>"; };
-		C0482BE92478B0DA00D5AF02 /* ExamplePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplePresenterTests.swift; sourceTree = "<group>"; };
-		C0482BEB2478B15500D5AF02 /* ExamplePresenterDelegateMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplePresenterDelegateMock.swift; sourceTree = "<group>"; };
-		C0482BED2478B15F00D5AF02 /* ExampleRouterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleRouterMock.swift; sourceTree = "<group>"; };
-		C0482BEF2478B42300D5AF02 /* ExampleInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleInteractorMock.swift; sourceTree = "<group>"; };
+		AA000014000000000000001 /* ExampleViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewModelTests.swift; sourceTree = "<group>"; };
+		AA000016000000000000001 /* ExampleServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleServiceTests.swift; sourceTree = "<group>"; };
+		AA000018000000000000001 /* ExampleCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleCoordinatorTests.swift; sourceTree = "<group>"; };
+		AA00001A000000000000001 /* ExampleServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleServiceMock.swift; sourceTree = "<group>"; };
+		AA00001C000000000000001 /* ExampleCoordinatorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleCoordinatorMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,7 +153,8 @@
 			isa = PBXGroup;
 			children = (
 				C0482BBC2478ABD800D5AF02 /* ViewLoadable */,
-				C0482BBE2478ABD800D5AF02 /* VIPER */,
+				AA00002A000000000000001 /* MVVM */,
+				C0482BBF2478ABD800D5AF02 /* Entity */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -170,16 +167,14 @@
 			path = ViewLoadable;
 			sourceTree = "<group>";
 		};
-		C0482BBE2478ABD800D5AF02 /* VIPER */ = {
+		AA00002A000000000000001 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
-				C0482BBF2478ABD800D5AF02 /* Entity */,
-				C0482BC12478ABD800D5AF02 /* Presenter */,
-				C0482BC32478ABD800D5AF02 /* View */,
-				C0482BC52478ABD800D5AF02 /* Interactor */,
-				C0482BC72478ABD800D5AF02 /* Router */,
+				AA000002000000000000001 /* BaseViewModel.swift */,
+				AA000004000000000000001 /* Coordinator.swift */,
+				AA000006000000000000001 /* Service.swift */,
 			);
-			path = VIPER;
+			path = MVVM;
 			sourceTree = "<group>";
 		};
 		C0482BBF2478ABD800D5AF02 /* Entity */ = {
@@ -188,38 +183,6 @@
 				C0482BC02478ABD800D5AF02 /* SectionData.swift */,
 			);
 			path = Entity;
-			sourceTree = "<group>";
-		};
-		C0482BC12478ABD800D5AF02 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				C0482BC22478ABD800D5AF02 /* BasePresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		C0482BC32478ABD800D5AF02 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				C0482BC42478ABD800D5AF02 /* BaseViewController.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		C0482BC52478ABD800D5AF02 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				C0482BC62478ABD800D5AF02 /* BaseInteractor.swift */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		C0482BC72478ABD800D5AF02 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				C0482BC82478ABD800D5AF02 /* BaseRouter.swift */,
-			);
-			path = Router;
 			sourceTree = "<group>";
 		};
 		C0482BCF2478ABDF00D5AF02 /* Module */ = {
@@ -233,45 +196,53 @@
 		C0482BD02478ABE700D5AF02 /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				C0482BD42478AC0200D5AF02 /* Interactor */,
-				C0482BD22478AC0200D5AF02 /* Presenter */,
-				C0482BD92478AC0200D5AF02 /* Router */,
+				AA00002B000000000000001 /* Model */,
 				C0482BD62478AC0200D5AF02 /* View */,
+				AA00002C000000000000001 /* ViewModel */,
+				AA00002D000000000000001 /* Service */,
+				AA00002E000000000000001 /* Coordinator */,
 			);
 			path = Example;
 			sourceTree = "<group>";
 		};
-		C0482BD22478AC0200D5AF02 /* Presenter */ = {
+		AA00002B000000000000001 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C0482BD32478AC0200D5AF02 /* ExamplePresenter.swift */,
+				AA000008000000000000001 /* ExampleModel.swift */,
 			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		C0482BD42478AC0200D5AF02 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				C0482BD52478AC0200D5AF02 /* ExampleInteractor.swift */,
-			);
-			path = Interactor;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		C0482BD62478AC0200D5AF02 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C0482BD72478AC0200D5AF02 /* ExampleViewController.xib */,
-				C0482BD82478AC0200D5AF02 /* ExampleViewController.swift */,
+				AA000010000000000000001 /* ExampleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		C0482BD92478AC0200D5AF02 /* Router */ = {
+		AA00002C000000000000001 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				C0482BDA2478AC0200D5AF02 /* ExampleRouter.swift */,
+				AA00000A000000000000001 /* ExampleViewModel.swift */,
 			);
-			path = Router;
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AA00002D000000000000001 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				AA00000C000000000000001 /* ExampleService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		AA00002E000000000000001 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				AA00000E000000000000001 /* ExampleCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		C0482BE02478AE2300D5AF02 /* Module */ = {
@@ -286,37 +257,44 @@
 			isa = PBXGroup;
 			children = (
 				C0482BE32478AE3300D5AF02 /* Mock */,
-				C0482BE82478B0BD00D5AF02 /* Presenter */,
-				C0482BE22478AE2E00D5AF02 /* Interactor */,
+				AA00002F000000000000001 /* ViewModel */,
+				AA000030000000000000001 /* Service */,
+				AA000031000000000000001 /* Coordinator */,
 			);
 			path = Example;
 			sourceTree = "<group>";
 		};
-		C0482BE22478AE2E00D5AF02 /* Interactor */ = {
+		AA00002F000000000000001 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				C0482BE62478AE5100D5AF02 /* ExampleInteractorTests.swift */,
+				AA000014000000000000001 /* ExampleViewModelTests.swift */,
 			);
-			path = Interactor;
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AA000030000000000000001 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				AA000016000000000000001 /* ExampleServiceTests.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		AA000031000000000000001 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				AA000018000000000000001 /* ExampleCoordinatorTests.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		C0482BE32478AE3300D5AF02 /* Mock */ = {
 			isa = PBXGroup;
 			children = (
-				C0482BE42478AE4200D5AF02 /* ExampleInteractorDelegateMock.swift */,
-				C0482BEB2478B15500D5AF02 /* ExamplePresenterDelegateMock.swift */,
-				C0482BED2478B15F00D5AF02 /* ExampleRouterMock.swift */,
-				C0482BEF2478B42300D5AF02 /* ExampleInteractorMock.swift */,
+				AA00001A000000000000001 /* ExampleServiceMock.swift */,
+				AA00001C000000000000001 /* ExampleCoordinatorMock.swift */,
 			);
 			path = Mock;
-			sourceTree = "<group>";
-		};
-		C0482BE82478B0BD00D5AF02 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				C0482BE92478B0DA00D5AF02 /* ExamplePresenterTests.swift */,
-			);
-			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -401,7 +379,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0482B982478AB9C00D5AF02 /* LaunchScreen.storyboard in Resources */,
-				C0482BDD2478AC0200D5AF02 /* ExampleViewController.xib in Resources */,
 				C0482B952478AB9C00D5AF02 /* Preview Assets.xcassets in Resources */,
 				C0482B922478AB9C00D5AF02 /* Assets.xcassets in Resources */,
 			);
@@ -421,18 +398,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0482BC92478ABD800D5AF02 /* ViewLoadable.swift in Sources */,
-				C0482BDE2478AC0200D5AF02 /* ExampleViewController.swift in Sources */,
-				C0482BCE2478ABD800D5AF02 /* BaseRouter.swift in Sources */,
-				C0482BDC2478AC0200D5AF02 /* ExampleInteractor.swift in Sources */,
-				C0482BCB2478ABD800D5AF02 /* BasePresenter.swift in Sources */,
+				AA000011000000000000001 /* ViewLoadable.swift in Sources */,
+				AA000012000000000000001 /* SectionData.swift in Sources */,
+				AA000001000000000000001 /* BaseViewModel.swift in Sources */,
+				AA000003000000000000001 /* Coordinator.swift in Sources */,
+				AA000005000000000000001 /* Service.swift in Sources */,
+				AA000007000000000000001 /* ExampleModel.swift in Sources */,
+				AA000009000000000000001 /* ExampleViewModel.swift in Sources */,
+				AA00000B000000000000001 /* ExampleService.swift in Sources */,
+				AA00000D000000000000001 /* ExampleCoordinator.swift in Sources */,
+				AA00000F000000000000001 /* ExampleView.swift in Sources */,
 				C0482B8C2478AB9700D5AF02 /* AppDelegate.swift in Sources */,
-				C0482BDF2478AC0200D5AF02 /* ExampleRouter.swift in Sources */,
-				C0482BCA2478ABD800D5AF02 /* SectionData.swift in Sources */,
-				C0482BDB2478AC0200D5AF02 /* ExamplePresenter.swift in Sources */,
 				C0482B8E2478AB9700D5AF02 /* SceneDelegate.swift in Sources */,
-				C0482BCD2478ABD800D5AF02 /* BaseInteractor.swift in Sources */,
-				C0482BCC2478ABD800D5AF02 /* BaseViewController.swift in Sources */,
 				C0482B902478AB9700D5AF02 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,12 +418,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0482BEE2478B15F00D5AF02 /* ExampleRouterMock.swift in Sources */,
-				C0482BE52478AE4200D5AF02 /* ExampleInteractorDelegateMock.swift in Sources */,
-				C0482BE72478AE5100D5AF02 /* ExampleInteractorTests.swift in Sources */,
-				C0482BF02478B42300D5AF02 /* ExampleInteractorMock.swift in Sources */,
-				C0482BEC2478B15500D5AF02 /* ExamplePresenterDelegateMock.swift in Sources */,
-				C0482BEA2478B0DA00D5AF02 /* ExamplePresenterTests.swift in Sources */,
+				AA000019000000000000001 /* ExampleServiceMock.swift in Sources */,
+				AA00001B000000000000001 /* ExampleCoordinatorMock.swift in Sources */,
+				AA000013000000000000001 /* ExampleViewModelTests.swift in Sources */,
+				AA000015000000000000001 /* ExampleServiceTests.swift in Sources */,
+				AA000017000000000000001 /* ExampleCoordinatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
